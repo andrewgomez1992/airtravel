@@ -55,4 +55,46 @@ a {
     align-items: center;
 }
 
+.navbar h1 {
+    color: #ff385c;
+}
+
+.search {
+    justify-self: center;
+    width: 100%;
+}
+
+.search form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+/* removes input box blue border */
+.search input:focus {
+    outline: none;
+}
+
+.search i {
+    font-size: 1rem;
+    color: #ff385c;
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+}
+
 /* Navbar End */
