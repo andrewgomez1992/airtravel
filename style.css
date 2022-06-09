@@ -31,7 +31,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    border-bottom: 1px solid #eeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .top-bar .intro {
@@ -42,3 +42,17 @@ a {
 .top-bar p {
     justify-self: end;
 }
+
+/* Top Bar End */
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid #eeeeee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+/* Navbar End */
