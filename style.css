@@ -49,6 +49,7 @@ a {
 
 .top-bar p {
     justify-self: end;
+    font-weight: 500;
 }
 
 .top-bar p:hover {
@@ -72,6 +73,7 @@ a {
 }
 
 .navbar h1 {
+    font-size: 24px;
     color: #ff385c;
     color: #0000;
     background:
@@ -142,6 +144,33 @@ a {
 }
 
 /* Navbar End */
+/* Sort Bar */
+.sort-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: rgb(105, 105, 105)
+}
+
+.sort-bar div {
+    text-align: center;
+}
+
+.sort-bar div:hover {
+    color: #ff385c;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sort-bar i {
+    font-size: 1.2rem;
+}
+
+.sort-bar p {
+    font-size: 12px;
+}
+
+/* End Sort Bar */
 
 @media screen and (max-width:940px) {
     .top-bar {
@@ -150,5 +179,53 @@ a {
         align-items: center;
     }
 
-    .navbar {}
+    .navbar {
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: none;
+    }
+
+    .navbar .search {
+        width: 100%;
+        padding: 10px 0;
+        order: 3;
+        grid-column: span 2;
+    }
+
+    .search form {
+        max-width: 100%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        background-color: #ffff;
+        flex-direction: column;
+        top: 80px;
+        height: 100%;
+        width: 100%;
+        transition-duration: 0.3s;
+        padding-top: 1rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    /* Top Bar */
+    .top-bar .intro,
+    p {
+        font-size: .8rem;
+    }
 }

@@ -49,12 +49,59 @@
                         <a href="" class="nav-link">Popular</a>
                     </li>
                 </ul>
-                <div class="mobile">
+                <div onClick="mobileMenu()" class="mobile">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
+        <!-- End Navbar -->
+        <!-- Sort Bar -->
+        <div class="sort-bar">
+            <div class='icon'>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>House</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Arctic</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p>Space</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p>Trees</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p>City</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p>Camping</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>Beach</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Games</p>
+            </div>
+        </div>
+        <!-- End Sort Bar -->
     </div>
+
+    <script>
+        const menuBtn = document.querySelector('.mobile')
+        const navMenu = document.querySelector('.nav-menu')
+
+        const mobileMenu = () => {
+            menuBtn.classList.toggle('active')
+            navMenu.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
