@@ -17,7 +17,7 @@
     <div class="container">
 
         <!-- Top Bar -->
-        <div class="top-bar">
+        <div id="top" class="top-bar">
             <h3 class="intro">Introducing AirTravel</h3>
             <p>Learn More</p>
         </div>
@@ -40,13 +40,13 @@
             <div class="menu">
                 <ul class="nav-menu">
                     <li>
-                        <a href="" class="nav-link">Listings</a>
+                        <a onClick="closeMenu()" href="#listings" class="nav-link">Listings</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Featured</a>
+                        <a onClick="closeMenu()" href="#featured" class="nav-link">Featured</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Popular</a>
+                        <a onClick="closeMenu()" href="#popular" class="nav-link">Popular</a>
                     </li>
                 </ul>
                 <div onClick="mobileMenu()" class="mobile">
@@ -91,8 +91,273 @@
             </div>
         </div>
         <!-- End Sort Bar -->
-    </div>
 
+        <!-- Listings -->
+        <div id="listings" class="listings">
+            <!-- Property Card -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1593714604578-d9e41b00c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFuc2lvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Kim and Andy Gomez</span></p>
+                    <p><span class="grey">Jun 22 - 29</span></p>
+                    <p>$749 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmlnJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Jon Reeves</span></p>
+                    <p><span class="grey">Jun 27 - 30th</span></p>
+                    <p>$579 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1628745277926-086b68b2d542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmlnJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Jeff Reeves</span></p>
+                    <p><span class="grey">Jun 21 - 24</span></p>
+                    <p>$439 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1607659398814-e6744dd2254d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnNpb25zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Gomez Reality, LLC</span></p>
+                    <p><span class="grey">Jun 12 - 19</span></p>
+                    <p>$985 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1628744876490-19b035ecf9c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJpZyUyMGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by James and Tylyn Reeves</span></p>
+                    <p><span class="grey">July 22 - 25</span></p>
+                    <p>$649 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Marie Martinez</span></p>
+                    <p><span class="grey">July 10 - 17</span></p>
+                    <p>$479 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Salazar inc.</span></p>
+                    <p><span class="grey">Jun 14 - 20</span></p>
+                    <p>$559 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1630650231815-a567e2ed26cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Rome and Rya</span></p>
+                    <p><span class="grey">5 Day Minimum</span></p>
+                    <p>$525 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1430285561322-7808604715df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Oso, LLC</span></p>
+                    <p><span class="grey">Jun 19 - 24</span></p>
+                    <p>$729 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598714805247-5dd440d87124?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Oliver and Owen</span></p>
+                    <p><span class="grey">July 1 - 5</span></p>
+                    <p>$499 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Penelope, LLC</span></p>
+                    <p><span class="grey">Jun 22 - 29</span></p>
+                    <p>$599 a night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    alt="">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <p><span class="grey">Hosted by Ava and Gray</span></p>
+                    <p><span class="grey">Jun 22 - 29</span></p>
+                    <p>$449 a night</p>
+                </div>
+            </div>
+        </div>
+        <!-- Listings End -->
+
+
+        <div id="featured" class="featured">
+            <div class="title">
+                <h1>Featured</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1613152184920-bc1c4ab7fd1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwd2l0aCUyMHBvb2x8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1631510390389-c1e4fb20ff31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbWUlMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2UlMjB3aXRoJTIwcG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1602774895672-b553538bceb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2UlMjB3aXRoJTIwcG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1623298460174-371443cc45f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2UlMjB3aXRoJTIwcG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="popular" class="featured">
+            <div class="title">
+                <h1>Popular</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGRlc2lnbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWUlMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                </div>
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1602075432748-82d264e2b463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjB3aXRoJTIwcG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGhvbWUlMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGhvbWUlMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to top -->
+        <div class="center">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <ul class="left-menu">
+                <li>AirTravel</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Destinations</li>
+            </ul>
+            <ul class="right-menu">
+                <li>Support</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <!-- Container End -->
+    </div>
     <script>
         const menuBtn = document.querySelector('.mobile')
         const navMenu = document.querySelector('.nav-menu')
@@ -101,6 +366,11 @@
             menuBtn.classList.toggle('active')
             navMenu.classList.toggle('active')
         }
+
+        const closeMenu = () => {
+            navMenu.classList.toggle('active')
+        }
+
     </script>
 </body>
 
