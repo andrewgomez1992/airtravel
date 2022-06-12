@@ -43,7 +43,7 @@ html {
 }
 
 .top-bar .intro:hover {
-    color: #ff385c;
+    color: #23d5d8d5;
 }
 
 .top-bar .intro {
@@ -52,7 +52,7 @@ html {
 }
 
 .top-bar .intro:hover {
-    color: #ff385c;
+    color: #23d5d8d5;
 }
 
 .top-bar p {
@@ -61,7 +61,7 @@ html {
 }
 
 .top-bar p:hover {
-    color: #ff385c;
+    color: #23d5d8d5;
 }
 
 /* Top Bar End */
@@ -82,10 +82,9 @@ html {
 
 .navbar h1 {
     font-size: 24px;
-    color: #ff385c;
     color: #0000;
     background:
-        linear-gradient(90deg, #000 50%, #ff385c 0) var(--_p, 100%)/200% no-repeat;
+        linear-gradient(90deg, #000 50%, #23d5d8d5 0) var(--_p, 100%)/200% no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     transition: .4s;
@@ -121,7 +120,7 @@ html {
 
 .search i {
     font-size: 1rem;
-    color: #ff385c;
+    color: #23d5d8d5;
 }
 
 .search button {
@@ -143,7 +142,7 @@ html {
 }
 
 .nav-link:hover {
-    color: #ff385c;
+    color: #23d5d8d5;
 }
 
 .mobile {
@@ -152,7 +151,7 @@ html {
 }
 
 .card-title i {
-    color: #ff385c
+    color: #23d5d8d5
 }
 
 /* Navbar End */
@@ -169,7 +168,7 @@ html {
 }
 
 .sort-bar div:hover {
-    color: #ff385c;
+    color: #23d5d8d5;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -211,7 +210,7 @@ html {
 
 .listings img:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    border: 2px solid #ff385c;
+    transform: scale(1.05);
 }
 
 .listings p {
@@ -220,6 +219,15 @@ html {
 
 img {
     border-radius: 15px;
+}
+
+img:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid #23d5d8d5;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* Listings Ending */
@@ -234,10 +242,31 @@ img {
     padding: 1rem 0;
 }
 
-.featured h1 {
-    border-bottom: 4px solid #ff385c;
-    display: inline;
+/* .navbar h1:hover {
+    --_p: 0%;
 }
+
+.navbar h1 {
+    font-size: 24px;
+    color: #0000;
+    background:
+        linear-gradient(90deg, #000 50%, #23d5d8d5 0) var(--_p, 100%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .4s;
+} */
+
+.featured h1:hover {
+    --_p: 0%;
+}
+
+
+.featured h1 {
+    border-bottom: 4px solid #23d5d8d5;
+    display: inline;
+
+}
+
 
 .featured-wrapper {
     --gap: 1rem;
@@ -294,6 +323,10 @@ img {
 .center a {
     margin: auto;
     font-size: 2rem;
+}
+
+.center .fa-solid:hover {
+    color: #23d5d8d5;
 }
 
 @media screen and (max-width:940px) {
