@@ -57,11 +57,25 @@ html {
 
 .top-bar p {
     justify-self: end;
-    font-weight: 500;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .top-bar p:hover {
     color: #23d5d8d5;
+}
+
+.login button {
+    color: black;
+    width: 50px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.intro {
+    color: #23d5d8d5
 }
 
 /* Top Bar End */
@@ -219,6 +233,7 @@ html {
 
 img {
     border-radius: 15px;
+    cursor: pointer;
 }
 
 img:hover {
@@ -229,6 +244,10 @@ img:hover {
     border-left: 8px solid #23d5d8d5;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
+
+
+
 
 /* Listings Ending */
 
